@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Machine Learning model and preprocessor (large files)
+Mo_hinh_da_huan_luyen.joblib
+Chuan_hoa_du_lieu.joblib
+
+# Jupyter Notebook checkpoints & cache
+.ipynb_checkpoints/
+.gradio/
+__pycache__/
+*.pyc
+
+# Excel export files
+ket_qua_phan_loai.xlsx
+
+# OS generated files
+.DS_Store
+Thumbs.db
