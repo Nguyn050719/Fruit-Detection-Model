@@ -43,20 +43,26 @@ Cấu trúc thư mục
 Hướng dẫn cài đặt và sử dụng:
     Bước 1: Tạo môi trường ảo (venv)
         python -m venv venv
+
     Bước 2: Kích hoạt môi trường ảo
         - Trên Windows (PowerShell):
             venv\Scripts\Activate.ps1
+
         - Trên Windows (CMD/Command Prompt):
             venv\Scripts\activate
+
         - Trên macOS/Linux:
             source venv/bin/activate
+
     Bước 3: Cài đặt các thư viện cần thiết
         pip install -r requirements.txt
+
     Bước 4: Huấn luyện mô hình để tạo các tệp .joblib
         Vì các file mô hình dung lượng lớn (`Mo_hinh_da_huan_luyen.joblib` và `Chuan_hoa_du_lieu.joblib`) bị bỏ qua không đẩy lên GitHub, bạn cần chạy huấn luyện mô hình để tự sinh ra các file này trước:
-        - Cách 1 (Khuyên dùng): Mở file `Mo_hinh_huan_luyen.ipynb` bằng VS Code hoặc Jupyter Notebook, chọn kernel là môi trường ảo `venv` vừa cài đặt, và nhấn **Run All** (Chạy tất cả) để huấn luyện mô hình.
-        - Cách 2 (Sử dụng Terminal): Chạy lệnh sau để tự động huấn luyện thông qua Notebook ngay trên Command Line:
-            jupyter nbconvert --to notebook --execute --inplace Mo_hinh_huan_luyen.ipynb
+                - Cách 1 (Khuyên dùng): Mở file `Mo_hinh_huan_luyen.ipynb` bằng VS Code hoặc Jupyter Notebook, chọn kernel là môi trường ảo `venv` vừa cài đặt, và nhấn **Run All** để huấn luyện mô hình.
+                
+                - Cách 2 (Sử dụng Terminal): Chạy lệnh sau để tự động huấn luyện thông qua Notebook ngay trên Command Line: jupyter nbconvert --to notebook --execute --inplace Mo_hinh_huan_luyen.ipynb
     Bước 5: Khởi chạy ứng dụng
         python app.py
+
     Hệ thống sẽ cung cấp một đường link cục bộ (thường là `http://127.0.0.1:7860/`). Hãy click vào đường link đó hoặc copy và dán vào trình duyệt web để bắt đầu sử dụng!
